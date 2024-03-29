@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{times} % ou seulement l'un, ou l'autre, ou times etc.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{mathbbol}
+\usepackage{geometry}
+\usepackage[Algortihme]{algorithm}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{stmaryrd} 
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage{lmodern}
+
+
+\newtheorem{lemme}{Lemme}[section]
+\newtheorem{prop}{Propriété}[section]
+\newtheorem*{dem}{Preuve}
+\newtheorem{thm}{Théorème}[section]
+\newtheorem{defe}{Définition}[section]
+
+\newcommand{\Mod}[1]{ (\mathrm{mod}\ #1)}
+\newcommand{\inte}[1]{\llbracket #1 \rrbracket}
+\newcommand{\sur}[1]{\overline{#1}}
+
+\DeclareMathOperator{\Ima}{Im}
+
+\author{Alexandre}
+\date{2023/2024}
+\geometry{a4paper, top=5cm, bottom=3cm, left=3cm, right=3cm, hmargin=1.3cm,vmargin=3cm}
+\definecolor{darkWhite}{rgb}{0.94,0.94,0.94}
+\title{Description matricielle des nombres algébriques}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Avant-Propos}
+
+Ce document a pour objet de donner quelques preuves de propriétés importantes en théorie algébrique des nombres.
+
+\section{Introduction}
+
+\begin{defe}
+	Pour $n\in \mathbb{N}^*$ et $K$ un corps, on notera $\mathbf{M}_n(K)$ l'ensemble des matrices à coeffiecients dans $K$.
+\end{defe}
+
+
+\begin{defe}
+Soit $x \in \mathbb{C}$. On dit que $x$ est \textit{algébrique} s'il est annulé par un polynôme à coefficients dans $\mathbb{Q}$. 
+On note $\bar{\mathbb{Q}}$ l'ensemble des nombres algébriques.
+\end{defe}
+\begin{defe}
+Si de plus $x$ est annulé par un polynôme unitaire à coeffecients entiers, on dit que $x$ est un entier algébrique. 
+On note $\bar{\mathbb{Z}}$ l'ensemble des entiers algébriques. 
+\end{defe}
+
+\begin{defe}
+	Pour $A$ et $B$ deux matrices de $\mathbf{M}_n(\mathbb{C})$, on définit le produit tensoriel :
+	$$ 
+A \otimes B =\left[\begin{array}{cccc}
+a_{1,1} B & a_{1,2} B & \cdots & a_{1,n} B \\
+a_{2,1} B & a_{2,2} B & \cdots & a_{2,n} B \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n,1} B & a_{n,2} B & \cdots & a_{n,n} B
+\end{array}\right]
+$$
+	
+\end{defe}
+
+
+
+\begin{thm}
+$\bar{\mathbb{Q}}$ est un sous-corps de $\mathbb{C}$
+\end{thm}
+
+\begin{dem}
+$\bar{\mathbb{Q}}$ est bien inclus dans $\mathbb{C}$ et n'est pas vide. Soit $x$ et $y$ deux nombres algébriques. Soit $P$ et $Q$ deux polynômes annulateurs annulant respectivement $x$ et $y$. Soit $A$ et $B$ les matrices compagnons respectivement de $P$ et de $Q$. 
+\end{dem}
+
+
+
+	
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
