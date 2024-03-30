@@ -73,19 +73,35 @@ a_{1,1} B & a_{1,2} B & \cdots & a_{1,n} B \\
 a_{2,1} B & a_{2,2} B & \cdots & a_{2,n} B \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{n,1} B & a_{n,2} B & \cdots & a_{n,n} B
-\end{array}\right]
+\end{array}\right] \in \mathbf{M}_{n^2}(\mathbb{C})
 $$
 	
 \end{defe}
 
 
+\section{Quelques propriétés}
+\begin{prop}
+	Pour $A$, $B$, $C$ et $D$ quatres matrices de $\mathbf{M}_n(\mathbb{C})$, on a les formules suivantes :
+	\begin{itemize}
+		\item $(A \otimes B)\otimes C = A \otimes (B \otimes C)$
+		\item $\forall \lambda \in \mathbb{C}, A \otimes (B + \lambda C)=(A \otimes B) + \lambda (A \otimes C)$
+		\item $(A + \lambda B) \otimes C = (A \otimes C) + \lambda (B \otimes C)$
+		\item $(A \otimes B)(C \otimes D)=(AC)\otimes (BD)$
+	\end{itemize}
+
+	Cela traduit l'associativité et la bilinéarité du produit tensoriel, ainsi qu'une compatibilité vis à vis du produit usuel. Bien entendu, ces propriétés restent vraies pour des matrices de tailles quelconques, tant que les produits considérés ont un sens. 
+\end{prop}
+
+\section{Structure de l'ensemble des nombres algébriques}
 
 \begin{thm}
 $\bar{\mathbb{Q}}$ est un sous-corps de $\mathbb{C}$
 \end{thm}
 
 \begin{dem}
-$\bar{\mathbb{Q}}$ est bien inclus dans $\mathbb{C}$ et n'est pas vide. Soit $x$ et $y$ deux nombres algébriques. Soit $P$ et $Q$ deux polynômes annulateurs annulant respectivement $x$ et $y$. Soit $A$ et $B$ les matrices compagnons respectivement de $P$ et de $Q$. 
+$\bar{\mathbb{Q}}$ est bien inclus dans $\mathbb{C}$ et n'est pas vide. Soit $x$ et $y$ deux nombres algébriques. Soit $P$ et $Q$ deux polynômes annulateurs annulant respectivement $x$ et $y$. Soit $A$ et $B$ les matrices compagnons respectivement de $P$ et de $Q$.
+\\
+Dans ce cas, $x$ et $y$ sont valeurs propre de $A$ et $B$. Soit alors $X$ et $Y$ deux vecteurs propres associés. On a dans ce cas : $$(A \otimes B)(X \otimes Y)=(AX)\otimes (BY)=xy(X \otimes Y)$$ 
 \end{dem}
 
 
