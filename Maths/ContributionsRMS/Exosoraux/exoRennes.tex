@@ -1,0 +1,42 @@
+\documentclass{article} 
+\usepackage[french]{babel} 
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\newcommand{\partie}[1]{\section{#1}} 
+\newcommand{\question}[1]{\paragraph{#1}}
+\newcommand{\sousquestion}[1]{\paragraph{#1}}  
+\begin{document} 
+\title{Concours : Oral ENS Rennes sur dossier 2024}
+\author{Blanc Alexandre AB004972
+alex-blanc3@outlook.fr} 
+
+\maketitle  
+\partie{Exercice d'Algèbre} 
+\question{I.}
+Soit $M\in M_n(\mathbb{Z})$ que l'on suppose diagonalisable sur $\mathbb{C}$ et dont toutes les valeurs propres sont de modules strictement inférieur à $1$. Montrer que $M=0$.
+\question{II.}
+Soit $p\geq 3$ un entier premier et considérons le morphisme de réduction modulo p :
+$$\pi_p : A \in GL_n(\mathbb{Z}) \longrightarrow A \, mod \, p \in Gl_n(\mathbb{Z}/p\mathbb{Z})$$ 
+Montrer que si $A\in \ker{\pi_p}$ est d'ordre fini, alors $A=I_n$ 
+\partie{Exercice d'Analyse}
+\subsection{Exercice 1}
+\question{I.}
+Calculer pour $a\in \mathbb{C}$ tel que $Re(a)>0$ et $\xi \in \mathbb{R}$ 
+$$\int_{-\infty}^0 e^{-i\xi x} e^{ax} \mathrm{d} x$$
+\question{II.}
+Soit $N \in \mathbb{N}^*$ et $\omega_1, \cdots , \omega_N \in \mathbb{C}$\textbackslash $\mathbb{R}$ deux à deux distincts.\newline
+Déterminer une fonction $f : \mathbb{R} \rightarrow \mathbb{C}$ telle que pour tout $\xi \in \mathbb{R}$ :
+$$\int_{\mathbb{R}}e^{-i\xi x}f(x)\mathrm{d}x=\frac{1}{\prod_{j=1}^N(\xi - \omega_j)}.$$
+\subsection{Exercice 2} 
+Soit $n\in \mathbb{N}$ et $f : \mathbb{R} \rightarrow \mathbb{R}$ $\mathcal{C}^\infty$ tels que :
+$$\lim_{|x|\to \infty}\frac{f(x)}{x^n} = 0$$
+\question{I.}
+Montrer que $f^{(n+1)}$ s'annule.
+\question{II.} 
+En déduire que pour tout $p\in \mathbb{N}$ tel que $p>n$, $f^{(p)}$ s'annule. 
+
+\end{document}
+
+
